@@ -319,10 +319,5 @@ body {
         max-width: 100%;
     }
 
-    .first-container{
-        background-image: url('assets/Small\ Background.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
+   
 }
