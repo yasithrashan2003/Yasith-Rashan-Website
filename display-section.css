@@ -10,7 +10,7 @@
 body {
     margin: 0;
     width: 100%;
-    background-image: url('assets/Pink-Gradient.avif');
+    background-image: url('assets/White-Background.avif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -143,7 +143,7 @@ body {
     }
 }
 
-/* Container Css */
+/* ***************************************************Container Css  *************************************************************************** */
 .first-container {
     display: flex;
     flex-direction: column;
@@ -152,7 +152,7 @@ body {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background-image: url('assets/IT security Image.avif');
+    background-image: url('assets/Mountain.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -182,13 +182,17 @@ body {
     letter-spacing: 0.1rem;
     font-weight: 500;
     font-style: italic;
+    color: rgb(87,123,141);
+    color: linear-gradient(90deg, rgba(87,123,141,1) 24%, rgba(52,76,100,1) 73%);
 }
 
 .display-details h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    font-weight: 300;
+    font-weight:400;
     letter-spacing: 0.05rem;
+    color: rgb(19,75,112);
+    color: linear-gradient(90deg, rgba(19,75,112,1) 24%, rgba(80,140,155,1) 73%);
 }
 
 .social-media-icons {
@@ -321,3 +325,21 @@ body {
 
    
 }
+
+/* Tablet screens (768px and up) */
+@media (max-width: 1024px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Mobile phones (768px and down) */
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+

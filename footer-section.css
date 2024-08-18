@@ -1,6 +1,7 @@
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background: rgb(19,75,112);
+    background: linear-gradient(90deg, rgba(19,75,112,1) 33%, rgba(80,140,155,1) 100%);
     color: #fff;
     padding: 20px 10%;
     text-align: center;
