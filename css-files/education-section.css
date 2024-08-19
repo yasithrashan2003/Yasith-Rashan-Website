@@ -1,0 +1,139 @@
+/* Education Section */
+.education-container {
+    width: 100%;
+    padding: 35px 10%;
+}
+
+main.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.col .title {
+    color: #333;
+    padding: 0px 0px 20px 30px;
+}
+
+.col .contents {
+    padding: 0px 30px;
+
+}
+
+.col .contents .box {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background: rgba(255, 255, 255, 0.2); /* Fully transparent white */
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.col .contents .box:hover {
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+
+
+
+.education-logo img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px; /* Space between the image and text */
+    border-radius: 10px;
+}
+
+.education-text h4, .education-text h3, .education-text p {
+    margin: 0;
+}
+
+.education-text h4 {
+    color: #444;
+}
+
+.education-text h3 {
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    color: #444;
+}
+
+.education-text p {
+    line-height: 1.2;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .education-container {
+        padding: 20px 5%;
+    }
+
+    main.row {
+        grid-template-columns: 1fr; /* Stack columns on top of each other */
+        grid-column-gap: 0; /* Remove the gap between columns */
+    }
+
+    .col .contents {
+        padding: 0px; /* Remove padding inside the contents */
+        border-left: none; /* Remove the left border */
+    }
+
+    .col .contents .box {
+        flex-direction: column; /* Stack logo and text vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 15px; /* Reduce padding */
+        margin-bottom: 15px; /* Reduce bottom margin */
+    }
+
+    .education-logo img {
+        max-width: 120px; /* Reduce the maximum width of the image */
+        margin-right: 0; /* Remove margin to center the image */
+        margin-bottom: 10px; /* Add margin below the image */
+    }
+
+    .education-text h3 {
+        font-size: 18px; /* Reduce the font size */
+    }
+
+    .education-text p {
+        font-size: 13px; /* Reduce the font size */
+    }
+
+    .col .contents .box::before {
+        display: none; /* Hide the ::before element on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .education-container {
+        padding: 15px 2%;
+    }
+
+    .education-text h3 {
+        font-size: 16px; /* Further reduce font size for very small screens */
+    }
+
+    .education-text p {
+        font-size: 12px; /* Further reduce font size */
+    }
+}
+
+
+/* Scroll Section  */
+/* Initially hide the boxes */
+.box {
+    opacity: 0;
+    transform: translateY(20px); /* Slide up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Fade-in class */
+.box.visible {
+    opacity: 1;
+    transform: translateY(0); /* Return to original position */
+}

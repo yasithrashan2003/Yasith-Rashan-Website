@@ -1,0 +1,48 @@
+/* Footer Styles */
+footer {
+    background: rgb(104,109,118);
+    background: linear-gradient(90deg, rgba(104,109,118,1) 11%, rgba(49,54,63,1) 100%);
+    color: #fff;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer-content a {
+    color: #ffd700; /* Gold color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 5%;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 15px 2%;
+    }
+
+    .footer-content p {
+        font-size: 11px;
+    }
+}

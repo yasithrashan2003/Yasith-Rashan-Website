@@ -8,14 +8,14 @@
 
     <!-- Links  -->
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="display-section.css">
-    <link rel="stylesheet" href="about-me-section.css">
-    <link rel="stylesheet" href="skill-section.css">
-    <link rel="stylesheet" href="education-section.css">
-    <link rel="stylesheet" href="certification-section.css">
-    <link rel="stylesheet" href="project-section.css">
-    <link rel="stylesheet" href="footer-section.css">
+    <link rel="stylesheet" href="css-files/display-section.css">
+    <link rel="stylesheet" href="css-files/about-me-section.css">
+    <link rel="stylesheet" href="css-files/skill-section.css">
+    <link rel="stylesheet" href="css-files/education-section.css">
+    <link rel="stylesheet" href="css-files/certification-section.css">
+    <link rel="stylesheet" href="css-files/project-section.css">
+    <link rel="stylesheet" href="css-files/footer-section.css">
+    <link rel="stylesheet" href="css-files/go-to-top.css">
 
 </head>
 <body>
@@ -35,13 +35,18 @@
             </label>
 
             <nav class="navbar">
-                <a href="#home" style="--i:0;">Home</a>
-                <a href="#about-me" style="--i:1;">About</a>
-                <a href="#skills" style="--i:2;">Skills</a>
-                <a href="#education" style="--i:3;">Education</a>
-                <a href="#projects" style="--i:4;">Projects</a>
+                <a href="#home" style="--i:0;" onclick="closeNavbar()">Home</a>
+                <a href="#about-me" style="--i:1;" onclick="closeNavbar()">About</a>
+                <a href="#skills" style="--i:2;" onclick="closeNavbar()">Skills</a>
+                <a href="#education" style="--i:3;" onclick="closeNavbar()">Education</a>
+                <a href="#projects" style="--i:4;" onclick="closeNavbar()">Projects</a>
             </nav>
         </header>
+
+        <a href="#" class="go-to-top" id="goToTop">
+            <i class="bx bx-up-arrow-alt"></i>
+        </a>
+        
 
         <!-- ************************************Display Section ******************************************** -->
 
@@ -244,11 +249,22 @@
                 <small>2024-2024</small>
                 <p>Linkdin Learning</p>
                 <span class="right-container-arrow"></span>
-
                 <div class="certificate-image">
                     <img src="assets/Certificates/Java.png" alt="">
                 </div>
+            </div>
+        </div>
 
+        <div class="certificate-container left-container">
+            <img src="assets/HackerRank-Logo.png" alt="">
+            <div class="text-box">
+                <h2>SQL Beginners</h2>
+                <small>2024-2024</small>
+                <p>Hacker Rank</p>
+                <span class="left-container-arrow"></span>
+                <div class="certificate-image">
+                    <img src="assets/Certificates/SQL HR.png" alt="">
+                </div>
             </div>
         </div>
 
@@ -339,3 +355,13 @@
     </footer>
 
 
+    <!-- Java Script  -->
+     <script src="script-files/certificate-script.js"></script>
+     <script src="script-files/project-script.js"></script>
+     <script src="script-files/education-script.js"></script>
+     <script src="script-files/skill-sript.js"></script>
+     <script src="script-files/nav-bar-script.js"></script>
+     <script src="script-files/go-to-top-script.js"></script>
+
+</body>
+</html>
