@@ -185,3 +185,9 @@
     transform: translateY(0); /* Move to original position */
 }
 
+.certificate-boxes{
+    width: 90%;
+    max-width: 1200px; 
+    padding: 30px;
+    margin: 40px auto; /* Center horizontally and add vertical spacing */
+}
