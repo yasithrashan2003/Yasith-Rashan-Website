@@ -116,7 +116,7 @@ body {
         width: 100%;
         height: 0;
         background-color: rgba(199, 191, 191, 0.7);
-        backdrop-filter: blur(100px);
+        backdrop-filter: blur(50px);
         box-shadow: 0.5rem 1px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         transition: height 0.3s ease;
