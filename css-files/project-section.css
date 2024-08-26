@@ -4,6 +4,13 @@
     padding: 35px 10%;
 }
 
+.projects-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
 main.proj-row {
     display: grid;
     grid-template-columns: 1fr;
@@ -144,6 +151,11 @@ main.proj-row {
         font-size: xx-small;
         padding: 5px 10px;
     }
+
+    .projects-container h1 {
+        font-size: 2rem; /* Reduce font size */
+        margin-bottom: 15px;
+    }
 }
 
 /* Mobile Devices (up to 480px) */
@@ -175,6 +187,10 @@ main.proj-row {
     .project-links a {
         font-size: x-small;
         padding: 4px 8px;
+    }
+
+    .projects-container h1 {
+        font-size: 1.8rem; /* Further reduce font size */
     }
 }
 

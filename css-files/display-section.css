@@ -92,7 +92,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
     .icons {
         display: inline-flex;
     }
@@ -115,7 +115,7 @@ body {
         left: 0;
         width: 100%;
         height: 0;
-        background-color: rgba(199, 191, 191, 0.7);
+        background-color: rgba(137, 191, 223, 0.7);
         backdrop-filter: blur(50px);
         box-shadow: 0.5rem 1px rgba(0, 0, 0, 0.1);
         overflow: hidden;
@@ -123,7 +123,7 @@ body {
     }
 
     #check:checked ~ .navbar {
-        height: 18.7rem;
+        height: 20.7rem;
     }
 
     .navbar a {
@@ -152,7 +152,7 @@ body {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background-image: url('../assets/Mountain.jpg');
+    background-image: url('../assets/1131658.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -182,7 +182,7 @@ body {
     letter-spacing: 0.1rem;
     font-weight: 500;
     font-style: italic;
-    color: rgb(87,123,141);
+    color: rgb(89, 154, 187);
     color: linear-gradient(90deg, rgba(87,123,141,1) 24%, rgba(52,76,100,1) 73%);
 }
 
@@ -202,7 +202,7 @@ body {
 }
 
 .social-media-icons a {
-    color: #fff;
+    color:rgb(89, 154, 187);
     font-size: 1.8rem;
     transition: color 0.3s ease;
 }

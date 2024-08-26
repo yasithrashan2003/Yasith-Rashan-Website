@@ -4,6 +4,14 @@
     padding: 35px 10%;
 }
 
+.education-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+
 main.row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -107,6 +115,11 @@ main.row {
     .col .contents .box::before {
         display: none; /* Hide the ::before element on small screens */
     }
+
+    .education-container h1 {
+        font-size: 2rem; /* Reduce font size */
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -120,6 +133,10 @@ main.row {
 
     .education-text p {
         font-size: 12px; /* Further reduce font size */
+    }
+
+    .education-container h1 {
+        font-size: 1.8rem; /* Further reduce font size */
     }
 }
 
