@@ -115,7 +115,7 @@ body {
         left: 0;
         width: 100%;
         height: 0;
-        background-color: rgba(137, 191, 223, 0.7);
+        background-color: rgba(255, 255, 255, 0.4);
         backdrop-filter: blur(50px);
         box-shadow: 0.5rem 1px rgba(0, 0, 0, 0.1);
         overflow: hidden;
