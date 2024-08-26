@@ -1,7 +1,8 @@
 /* Footer Styles */
 footer {
-    background: rgb(104,109,118);
-    background: linear-gradient(90deg, rgba(104,109,118,1) 11%, rgba(49,54,63,1) 100%);
+    /* background: rgb(104,109,118);
+    background: linear-gradient(90deg, rgba(104,109,118,1) 11%, rgba(49,54,63,1) 100%); */
+    background: #7D7C7C;
     color: #fff;
     padding: 20px 10%;
     text-align: center;
@@ -18,7 +19,7 @@ footer {
 }
 
 .footer-content a {
-    color: #ffd700; /* Gold color for links */
+    color: #F9D949; /* Gold color for links */
     text-decoration: none;
     font-weight: bold;
 }

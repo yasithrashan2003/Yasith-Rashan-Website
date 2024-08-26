@@ -10,11 +10,13 @@
 body {
     margin: 0;
     width: 100%;
-    background-image: url('../assets/White-Background.avif');
+    overflow-x: hidden;
+    background-image: url('../assets/White-Background.avif'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    overflow-x: hidden;
+    
+    
 }
 
 /* Navigation Bar Css */
@@ -140,7 +142,7 @@ body {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background-image: url('../assets/Mountain.jpg');
+    background-image: url('../assets/Light-Background.avif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

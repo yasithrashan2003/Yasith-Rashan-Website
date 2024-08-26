@@ -57,7 +57,6 @@
 }
 
 .skills-images img{
-    
     height:100px;
     width: auto;
 }
@@ -96,6 +95,17 @@
     .skills-images img {
         height: 80px; /* Adjust skill image size */
     }
+
+    .skills-images {
+        display: grid; /* Change to grid layout */
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+        gap: 10px; /* Maintain spacing between images */
+    }
+
+    .skills-images img {
+        height: 80px; /* Adjust image size */
+        width: auto;
+    }
 }
 
 /* Media Queries for Mobile Devices */
@@ -125,8 +135,14 @@
         width: 200px; /* Further reduce image width */
     }
 
+    
+    .skills-images {
+        grid-template-columns: repeat(3, 1fr); /* Keep 3 images per row on mobile */
+    }
+
     .skills-images img {
-        height: 60px; /* Smaller skill images */
+        height: 60px; /* Further reduce image size for mobile */
+        width: auto;
     }
 }
 
