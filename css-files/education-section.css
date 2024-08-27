@@ -72,6 +72,9 @@ main.row {
     font-size: 14px;
 }
 
+
+
+
 /* Media Queries for Small Screens */
 @media (max-width: 768px) {
     .education-container {
@@ -100,6 +103,10 @@ main.row {
         margin-bottom: 10px;
     }
 
+    .education-text h3, .education-text p, .education-text h4 {
+        text-align: center; /* Center text */
+    }
+
     .education-text h3 {
         font-size: 18px;
     }
@@ -116,11 +123,19 @@ main.row {
         font-size: 2rem;
         margin-bottom: 15px;
     }
+
+    .title h2{
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
     .education-container {
         padding: 15px 2%;
+    }
+
+    .education-text h3, .education-text p, .education-text h4 {
+        text-align: center; /* Center text */
     }
 
     .education-text h3 {
@@ -133,6 +148,9 @@ main.row {
 
     .education-container h1 {
         font-size: 1.8rem;
+    }
+    .title h2{
+        text-align: center;
     }
 }
 
