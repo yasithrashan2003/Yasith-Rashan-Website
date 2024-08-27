@@ -13,9 +13,13 @@
 .project-contents {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px; /* Adjust the gap between grid items as needed */
-    margin: 0px 20px;
+    gap: 20px;
+    margin: 0 auto; /* Center the grid */
+    max-width: 1200px; /* Adjust max-width for centering */
+    padding: 0 20px; /* Optional padding for spacing */
 }
+
+
 
 /* Project boxes */
 .project-box {
@@ -166,3 +170,5 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+
