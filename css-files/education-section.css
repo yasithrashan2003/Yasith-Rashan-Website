@@ -5,15 +5,15 @@ h1, h2, h3, h4 {
 }
 
 .education-container {
-    padding: 60px 20px;
+    padding: 20px 20px;
     text-align: center;
 }
 
-.education-container h1 {
+/* .education-container h1 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #333;
-}
+} */
 
 .row {
     display: flex;
@@ -110,6 +110,9 @@ h1, h2, h3, h4 {
         font-size: 1.3rem;
     }
 
+    .title h2{
+        font-size: 1.8rem;
+    }
     .education-text p {
         font-size: 0.95rem;
     }
@@ -127,7 +130,7 @@ h1, h2, h3, h4 {
     }
 
     .title h2 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         margin-bottom: 15px;
     }
 
