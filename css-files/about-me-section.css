@@ -45,6 +45,9 @@
     flex: 2;
 }
 
+.details p{
+    color: #333;
+}
 .about-me-text {
     font-size: 1.2rem;
     color: #666;
