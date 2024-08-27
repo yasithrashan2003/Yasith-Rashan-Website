@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px auto; /* Center horizontally and add vertical spacing */
+    margin: 40px auto 0px; /* Center horizontally and add vertical spacing */
 }
 
 .skill-container h1 {
