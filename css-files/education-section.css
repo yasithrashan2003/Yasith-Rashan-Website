@@ -11,7 +11,6 @@
     text-align: center;
 }
 
-
 main.row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,7 +24,6 @@ main.row {
 
 .col .contents {
     padding: 0px 30px;
-
 }
 
 .col .contents .box {
@@ -46,10 +44,8 @@ main.row {
     border: 1px solid transparent;
 }
 
-
-
 .education-logo img {
-    max-width: 150px;
+    max-width: 120px; /* Adjusted max width */
     height: auto;
     margin-right: 20px; /* Space between the image and text */
     border-radius: 10px;
@@ -61,7 +57,6 @@ main.row {
 
 .education-text h4 {
     color: #444;
-    
 }
 
 .education-text h3 {
@@ -100,7 +95,7 @@ main.row {
     }
 
     .education-logo img {
-        max-width: 120px; /* Reduce the maximum width of the image */
+        max-width: 100px; /* Further reduce the maximum width of the image */
         margin-right: 0; /* Remove margin to center the image */
         margin-bottom: 10px; /* Add margin below the image */
     }
@@ -140,7 +135,6 @@ main.row {
         font-size: 1.8rem; /* Further reduce font size */
     }
 }
-
 
 /* Scroll Section  */
 /* Initially hide the boxes */
