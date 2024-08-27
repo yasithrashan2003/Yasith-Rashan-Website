@@ -1,7 +1,6 @@
 /* General styling for the Projects container */
 .projects-container {
     padding: 50px 20px;
-
 }
 
 .projects-container h1 {
@@ -11,15 +10,11 @@
     color: #333;
 }
 
-.proj-row {
-    display: flex;
-    justify-content: center;
-}
-
 .project-contents {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Adjust the gap between grid items as needed */
+    margin: 0px 20px;
 }
 
 /* Project boxes */
@@ -28,14 +23,12 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 20px;
-    flex: 1 1 calc(33.333% - 40px);
-    max-width: calc(33.333% - 40px);
     display: flex;
     flex-direction: column;
+    padding: 0; /* Remove padding if not needed */
 }
 
-.project-box:hover{
+.project-box:hover {
     box-shadow: 0px 3px 12px 0px #ccc;
     border: 1px solid transparent;
 }
@@ -89,17 +82,12 @@
 
 /* Responsive design */
 @media (max-width: 992px) {
-    .project-box {
-        flex: 1 1 calc(50% - 40px);
-        max-width: calc(50% - 40px);
+    .project-contents {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
 
 @media (max-width: 768px) {
-    .project-box {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
     .project-img {
         height: 150px;
     }
@@ -109,9 +97,6 @@
     .projects-container {
         padding: 30px 10px;
     }
-    .project-box {
-        margin: 10px 0;
-    }
     .project-img {
         height: 120px;
     }
@@ -120,18 +105,13 @@
     }
     .project-links a {
         padding: 8px 12px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
-/* Media query for screens 360px wide */
 @media (max-width: 360px) {
     .projects-container {
         padding: 20px 5px;
-    }
-    .project-box {
-        margin: 5px 0;
-        max-width: 100%;
     }
     .project-img {
         height: 100px;
@@ -150,10 +130,9 @@
     }
     .project-links a {
         padding: 6px 10px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
-
 
 /* Scroll Section */
 .project-box {
