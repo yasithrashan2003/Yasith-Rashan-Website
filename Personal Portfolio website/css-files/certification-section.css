@@ -1,0 +1,188 @@
+/* Certificates Sections */
+
+.certification-title h2 {
+    font-size: 24px; /* Adjust font size for the title */
+    margin-bottom: 30px; /* Increased space below the title */
+    text-align: center;
+}
+
+
+.timeline {
+    position: relative;
+    width: 90%; /* Set width to 90% of the viewport width */
+    max-width: 1200px; /* Keep max-width for larger screens */
+    margin: 100px auto; /* Center horizontally and add top/bottom margin */
+}
+
+.certificate-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    opacity: 0; /* Start with elements hidden */
+    transform: translateY(30px); /* Start with elements moved down */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.4);
+    position: relative;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+}
+
+.text-box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.certificate-container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #666;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.text-box h2 {
+    font-weight: 600;
+}
+
+.text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #ccc;
+    left: -15px;
+}
+
+.certificate-image {
+    text-align: center; /* Center-aligns content inside the container */
+    position: static;
+}
+
+.certificate-image img {
+    width: 150px; /* Set width of the image */
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Makes the image behave like an inline element for centering */
+    margin: 20px auto; /* Centers the image horizontally and adds space above and below */
+}
+
+.certificate-image img {
+    width: 100px;
+    border-radius: 10px;
+    position: static;
+}
+
+.certificate-image {
+    text-align: center; /* Center-aligns content inside the container */
+}
+
+.certificate-image img {
+    width: 150px; /* Set width of the image */
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Makes the image behave like an inline element for centering */
+    margin: 20px auto; /* Centers the image horizontally and adds space above and below */
+}
+
+/* Media Queries for Small Screens */
+@media screen and (max-width: 780px) {
+    .certificate-image img {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 15px auto; /* Adjust margin for smaller screens */
+    }
+
+    .timeline {
+        margin: 50px auto; /* Center horizontally and adjust margin */
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .certificate-container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .text-box {
+        font-size: 14px;
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .certificate-container img {
+        left: 10px;
+    }
+
+    .left-container-arrow,
+    .right-container-arrow {
+        border-right: 10px solid #ccc;
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+/* Scroll-based animation */
+.certificate-container.scroll-animate {
+    opacity: 1; /* Make visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+
