@@ -38,14 +38,14 @@
             </label>
 
             <nav class="navbar">
-                <a href="#home" style="--i:0;" onclick="closeNavbar()">Home</a>
-                <a href="#about-me" style="--i:1;" onclick="closeNavbar()">About Me</a>
-                <a href="#skills" style="--i:2;" onclick="closeNavbar()">Skills</a>
-                <a href="#education" style="--i:3;" onclick="closeNavbar()">Qualifications</a>
-                <a href="#projects" style="--i:4;" onclick="closeNavbar()">Projects</a>
-                <a href="#certificates" style="--i:5;" onclick="closeNavbar()">Certificates</a>
-
+                <a data-target="home" style="--i:0;" onclick="scrollToSection(event)">Home</a>
+                <a data-target="about-me" style="--i:1;" onclick="scrollToSection(event)">About Me</a>
+                <a data-target="skills" style="--i:2;" onclick="scrollToSection(event)">Skills</a>
+                <a data-target="education" style="--i:3;" onclick="scrollToSection(event)">Qualifications</a>
+                <a data-target="projects" style="--i:4;" onclick="scrollToSection(event)">Projects</a>
+                <a data-target="certificates" style="--i:5;" onclick="scrollToSection(event)">Certificates</a>
             </nav>
+            
         </header>
 
         <a href="#" class="go-to-top" id="goToTop">
